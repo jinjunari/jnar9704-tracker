@@ -4,11 +4,12 @@
   "description": "Final Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Jinju Narimatsu",
-  "license": "ISC"
-  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "author": "Jinju Narimatsu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
