@@ -1,23 +1,44 @@
+html body{
+    height: 100%;
+    width: window;
+    color: #362B18;
+    background-color: #1A1B1A;
+    padding: 10px;
+    font-family: 'Merriweather Sans';
+}
+
+/* Navigation Bar */
 .navbar{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: antiquewhite;
-    padding: 15px;
+    border-style: solid;
+    color: #DFD4C1;
+    border-width: 1px;
+    border-color: #DFD4C1;
+    border-radius: 40px;
+    padding: 10px 90px 10px 90px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo{
-    margin-right: 50px;
+    /* margin-left: 50px; */
 }
 
-.list{
+.menulist{
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-#toggler,
-.navbar label{
-    display: none;
+
+
+/* Responsive for phone */
+@media screen and (max-width: 600px){
+    
 }
