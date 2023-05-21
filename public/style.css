@@ -7,37 +7,105 @@ html body{
     font-family: 'Merriweather Sans';
 }
 
-/* Navigation Bar */
+/* GLOBAL TEXT STYLING */
+
+h1 {
+    color: inherit;
+    font-family: 'Merriweather Sans';
+    font-size: 10px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p{
+    color: yellow;
+    font-size: 30px;
+}
+
+/* NAVIGATION BAR */
 .navbar{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-style: solid;
     color: #DFD4C1;
+
+    border-style: solid;
     border-width: 1px;
     border-color: #DFD4C1;
     border-radius: 40px;
+
     padding: 10px 90px 10px 90px;
+
+    margin-bottom: 8px;
 }
 
 .navbar a{
+    font-family: 'Merriweather Sans';
     text-decoration: none;
     color: inherit;
-}
-
-.logo{
-    /* margin-left: 50px; */
 }
 
 .menulist{
     list-style: none;
     display: flex;
     gap: 25px;
+}
 
+.menuitem :hover{
+    padding: 10px;
+    border-style: solid;
+    border-color: #E0D5C2;
+    border-width: 1px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* FEATURED SECTION */
+.featuredSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #A39B7A;
+    border-radius: 10px;
+
+    padding: 10px 90px 10px 90px;
+
+    gap: 10px;
+}
+
+.featuredHeading{
+    padding: 5px;
+    border-style: solid;
+    border-color: #362B18;
+    border-bottom-width: 1px;
 }
 
 
+.slider{
+    display: flex; flex-direction: row;
+    border: #2c702c;
+    border-width: 2px;
+    border-style: solid;
+    gap: 5px;
+    overflow: show;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    border: red;
+    border-width: 2px;
+    border-style: solid;
+
+    width: 185px;
+    height: auto;
+}
+
+.bookImage img{
+    width: 100%; height: auto;
+}
 
 /* Responsive for phone */
 @media screen and (max-width: 600px){
