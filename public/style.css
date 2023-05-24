@@ -4,24 +4,24 @@ html body{
     color: #362B18;
     background-color: #1A1B1A;
     padding: 10px;
-    font-family: 'Merriweather Sans';
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /* GLOBAL TEXT STYLING */
 
-h1 {
+div h1 {
+    font-family: 'Roboto Slab', sans-serif;
     color: inherit;
-    font-family: 'Merriweather Sans';
-    font-size: 10px;
+    font-size: 25px;
 }
 
-h2 {
-    font-size: 20px;
+div h2 {
+    font-size: 16px;
 }
 
-p{
-    color: yellow;
-    font-size: 30px;
+div p{
+    font-size: 14px;
+    
 }
 
 /* NAVIGATION BAR */
@@ -63,16 +63,21 @@ p{
     transition: 0.3s;
 }
 
-/* FEATURED SECTION */
-.featuredSection{
+/* GENERIC SECTION STYLING  */
+#mySection{
     display: flex;
     flex-direction: column;
-    background-color: #A39B7A;
     border-radius: 10px;
 
-    padding: 10px 90px 10px 90px;
+    padding: 20px 90px 20px 90px;
+    margin-bottom: 10px;
 
-    gap: 10px;
+    gap: 20px;
+}
+
+/* FEATURED SECTION */
+.beige{
+    background-color: #A39B7A;
 }
 
 .featuredHeading{
@@ -80,6 +85,7 @@ p{
     border-style: solid;
     border-color: #362B18;
     border-bottom-width: 1px;
+    font-size: inherit;
 }
 
 
@@ -88,11 +94,18 @@ p{
     border: #2c702c;
     border-width: 2px;
     border-style: solid;
-    gap: 5px;
+    gap: 20px;
     overflow: show;
 }
 
-.cover{
+.favourite{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.bookWrapper{
+    position: relative;
     display: flex;
     flex-direction: column;
     border: red;
@@ -101,11 +114,48 @@ p{
 
     width: 185px;
     height: auto;
+
+    gap: 8px;
 }
 
 .bookImage img{
     width: 100%; height: auto;
 }
+
+.bookTitles{
+    gap: 20px;
+}
+
+/* SPLIT VIEW SECTIONING */
+.splitGroup{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* MY BOOKSHELF SECTION  */
+.myBookshelf{
+    background-color:peachpuff;
+    width: 70%;
+}
+
+/* QUOTE SECTION  */
+.quoteWrapper{
+    background-color: #B5A28C;
+    width: 30%;
+}
+
+aside {
+    width: 30vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+
+
 
 /* Responsive for phone */
 @media screen and (max-width: 600px){
