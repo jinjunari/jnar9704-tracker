@@ -9,17 +9,17 @@ html body{
 
 /* GLOBAL TEXT STYLING */
 
-h1 {font-family: 'Roboto Slab', sans-serif;
+h1{font-family: 'Roboto Slab', sans-serif;
     color: inherit;
     font-size: 25px;}
 
-h2 {font-size: 16px;}
+h2{font-size: 16px;}
 
-p   {font-size: 14px;}
+p{font-size: 14px;}
 
-input   {font-size: 14px;}
+input{font-size: 14px;}
 
-q   {font-family: 'Roboto Slab';
+q {font-family: 'Roboto Slab';
     font-size: 20px;
     line-height: 30px;
     text-align: center;}
@@ -31,14 +31,11 @@ q   {font-family: 'Roboto Slab';
     align-items: center;
     justify-content: space-between;
     color: #DFD4C1;
-
     border-style: solid;
     border-width: 1px;
     border-color: #DFD4C1;
     border-radius: 40px;
-
     padding: 10px 90px 10px 90px;
-
     margin-bottom: 8px;
 }
 
@@ -52,8 +49,8 @@ q   {font-family: 'Roboto Slab';
     list-style: none;
     display: flex;
     gap: 25px;
+    
 }
-
 .menuitem :hover{
     padding: 10px;
     border-style: solid;
@@ -132,19 +129,38 @@ q   {font-family: 'Roboto Slab';
 
 /* MY BOOKSHELF SECTION  */
 .myBookshelf{
-    background-color:peachpuff;
+    background-color:#CC9980;
     width: 60vw;
 }
 
 /* Generated Book list table  */
-table {
-    border: 2px solid pink;
+thead {
+    border-bottom: 1px solid #362B18;
+    align-items: left;
+    font-size: 13px;
+  }
+th {
+    padding: 5px;
+    text-align: left;
+}
+td {
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 400;
 }
 
-thead {
-    border-bottom: 2px solid black;
-  }
-
+button{
+    background-color: #1A1B1A;
+    border: none;
+    color: #CC9980;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+}
 
 /* QUOTE SECTION  */
 .quoteWrapper{
@@ -251,7 +267,89 @@ textarea {
     object-fit: contain;
 }
 
+
 /* Responsive for phone */
-@media screen and (max-width: 600px){
-    
-}
+@media screen and (max-width: 600px) {
+    html body {
+      padding: 5px;
+    }
+  
+    /* NAVIGATION BAR */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .navbar a {
+      margin-top: 10px;
+    }
+  
+    .menulist {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menuitem :hover {
+      padding: 5px;
+    }
+  
+    /* GENERIC SECTION STYLING */
+    #mySection {
+      padding: 10px;
+    }
+  
+    /* FEATURED SECTION */
+    .slider {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .bookWrapper {
+      width: 150px;
+      height: auto;
+    }
+  
+    .bookTitles {
+      text-align: center;
+    }
+  
+    /* SPLIT VIEW SECTIONING */
+    .splitGroup {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    /* MY BOOKSHELF SECTION */
+    .myBookshelf {
+      width: 100%;
+    }
+  
+    /* Generated Book list table */
+    table {
+      font-size: 11px;
+    }
+  
+    /* QUOTE SECTION */
+    .quoteWrapper {
+      width: 100%;
+    }
+  
+    /* FORM SECTION */
+    form {
+      width: 100%;
+    }
+  
+    input[type="text"],
+    select,
+    input[type="number"],
+    textarea {
+      font-size: 12px;
+    }
+  
+    /* FOOTER */
+    #footer {
+      padding: 20px;
+    }
+  }
+  

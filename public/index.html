@@ -14,9 +14,13 @@
 <body>
     <!-- navigation bar -->
     <nav class="navbar">
-        <a href="#" class="logo"><img src="https://imgur.com/JZE52cF.png"
-            width="180"></a> 
+        <a href="#" class="logo"><img src="https://imgur.com/JZE52cF.png" width="180"></a>
         <div class="menu">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <ul class="menulist">
                 <li class="menuitem"><a href="#">Featured</a></li>
                 <li class="menuitem"><a href="#">My Bookshelf</a></li>
@@ -102,13 +106,15 @@
                     <th>Author</th>
                     <th>Category</th>
                     <th>Rating</th>
+                    <th>Date Finished</th>
+                    <th>Book Review</th>
+                    <!-- <th>Delete</th> -->
                   </tr>
                 </thead>
                 <!-- added books go here  -->
                 <tbody id="bookTableBody">
                     <tr>
-                        <td>book title</td>
-                        <td>author name</td>
+                        <td></td>
                     </tr>
                 </tbody>
                 
@@ -148,12 +154,12 @@
                 </select>
             </div>
             <div class="form-row">
-                <label for="bookCover">Book Cover:</label>
-                <input type="file" id="bookCover" name="bookCover" accept="image/png" required>
+                <label for="bookImage">Book Cover:</label>
+                <input type="file" id="bookImage" name="bookImage" accept="image/png" required>
             </div>
                 <div class="form-row">
                 <label for="bookRating">Star Rating:</label>
-                <input type="number" id="bookRating" name="bookRating" min="0" max="5" step="0.5" required>
+                <input type="number" id="bookRating" name="bookRating" min="0" max="5" step="1" required>
             </div>
             <div class="form-row">
                 <label for="bookReview">Book Review:</label>
