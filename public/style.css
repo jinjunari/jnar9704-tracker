@@ -136,6 +136,16 @@ q   {font-family: 'Roboto Slab';
     width: 60vw;
 }
 
+/* Generated Book list table  */
+table {
+    border: 2px solid pink;
+}
+
+thead {
+    border-bottom: 2px solid black;
+  }
+
+
 /* QUOTE SECTION  */
 .quoteWrapper{
     background-color: #B5A28C;
@@ -205,8 +215,6 @@ input::file-selector-button {
     transform: scale(0.95);
   }
 
-
-
 input[type="submit"] {
     padding: 5px 10px;
     background-color: #1A1B1A;
@@ -226,6 +234,7 @@ transition-duration: 0.5s;
 textarea {
     resize: vertical;
 }
+
 
 
 /* FOOTER  */
