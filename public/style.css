@@ -1,6 +1,6 @@
 html body{
     height: 100%;
-    width: window;
+    width: 100%;
     color: #362B18;
     background-color: #1A1B1A;
     padding: 10px;
@@ -9,17 +9,18 @@ html body{
 
 /* GLOBAL TEXT STYLING */
 
-h1{font-family: 'Roboto Slab', sans-serif;
+h1 {font-family: 'Roboto Slab', sans-serif;
     color: inherit;
+    font-weight: bold;
     font-size: 25px;}
 
-h2{font-size: 16px;}
+h2 {font-size: 16px;}
 
-p{font-size: 14px;}
+p {font-size: 14px; font-weight: lighter;}
 
-input{font-size: 14px;}
+input {font-size: 14px;}
 
-q {font-family: 'Roboto Slab';
+q {font-family: 'Roboto Slab'; 
     font-size: 20px;
     line-height: 30px;
     text-align: center;}
@@ -35,8 +36,12 @@ q {font-family: 'Roboto Slab';
     border-width: 1px;
     border-color: #DFD4C1;
     border-radius: 40px;
-    padding: 10px 90px 10px 90px;
+    padding: 20px 90px 20px 90px;
     margin-bottom: 8px;
+}
+
+.logo{
+    padding-top: 6px;
 }
 
 .navbar a{
@@ -51,7 +56,7 @@ q {font-family: 'Roboto Slab';
     gap: 25px;
     
 }
-.menuitem :hover{
+.menuitem:hover{
     padding: 10px;
     border-style: solid;
     border-color: #E0D5C2;
@@ -87,36 +92,57 @@ q {font-family: 'Roboto Slab';
     font-size: inherit;
 }
 
+.sliderContainer{
+   overflow-x: scroll;
+   padding: 5px;
+}
 
 .slider{
     display: flex; flex-direction: row;
     gap: 20px;
-    overflow: show;
+    width: 1300px;
 }
 
 .favourite{
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: 5px;
+    right: 5px;
+    width: 40px; /* Set initial width to fill parent container */
+    max-width: 50px; /* Set maximum width for larger screens */
 }
 
 .bookWrapper{
     position: relative;
     display: flex;
     flex-direction: column;
-
-    width: 185px;
+    max-width: 500px;
     height: auto;
-
     gap: 8px;
+    /* Add transition property for smooth scaling */
+    transition: transform 0.3s ease;
 }
+.bookWrapper:hover {
+    /* Apply the scaling effect on hover */
+    transform: scale(0.95);
+  }
 
 .bookImage img{
     width: 100%; height: auto;
 }
 
 .bookTitles{
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bookTitles h2{
+    font-weight: bold;
+}
+
+.bookTitles p{
+    font-size: 13px;
+    color: #505050;
 }
 
 /* SPLIT VIEW SECTIONING */
@@ -134,11 +160,17 @@ q {font-family: 'Roboto Slab';
 }
 
 /* Generated Book list table  */
+
+table {
+    font-size: 11px;
+    margin-top: -20px;
+}
+
 thead {
     border-bottom: 1px solid #362B18;
     align-items: left;
     font-size: 13px;
-  }
+}
 th {
     padding: 5px;
     text-align: left;
@@ -147,6 +179,13 @@ td {
     padding: 5px;
     font-size: 13px;
     font-weight: 400;
+}
+
+.tdCatgory{
+    padding: 5px 10px;
+    border: 1px solid #362B18;
+    border-radius: 10px;
+    color: red;
 }
 
 button{
@@ -197,6 +236,9 @@ label {
     display: block;
     font-size: 14px;
 }
+input::placeholder {
+    color: #A1A1A1;
+}
 
 input[type="text"],
 select,
@@ -207,6 +249,8 @@ textarea {
     border: 0px;
     border-radius: 4px;
     margin: 5px 0px 10px 0px;
+    color: #A1A1A1;
+    font-family:inherit;
 }
 
 select {
@@ -268,66 +312,46 @@ textarea {
 }
 
 
+
 /* Responsive for phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     html body {
-      padding: 5px;
+      padding: 5px; 
     }
   
     /* NAVIGATION BAR */
     .navbar {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
-    }
-  
-    .navbar a {
-      margin-top: 10px;
-    }
-  
-    .menulist {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .menuitem :hover {
+      align-items: center;
       padding: 5px;
     }
   
+    .navbar a {
+        margin-top: 10px;
+    }
+  
+    .menulist {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 5px 0px 5px 0px;
+    }
+
+  
     /* GENERIC SECTION STYLING */
     #mySection {
-      padding: 10px;
+    padding: 30px 30px 30px 30px;
     }
-  
-    /* FEATURED SECTION */
-    .slider {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    .bookWrapper {
-      width: 150px;
-      height: auto;
-    }
-  
-    .bookTitles {
-      text-align: center;
-    }
-  
+      
     /* SPLIT VIEW SECTIONING */
     .splitGroup {
       flex-direction: column;
-      gap: 20px;
+      gap: 0px;
     }
   
     /* MY BOOKSHELF SECTION */
     .myBookshelf {
       width: 100%;
-    }
-  
-    /* Generated Book list table */
-    table {
-      font-size: 11px;
     }
   
     /* QUOTE SECTION */

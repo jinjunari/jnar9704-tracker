@@ -14,16 +14,11 @@
 <body>
     <!-- navigation bar -->
     <nav class="navbar">
-        <a href="#" class="logo"><img src="https://imgur.com/JZE52cF.png" width="180"></a>
+        <a href="#" class="logo"><img src="https://imgur.com/WL7Y4FK.png" width="180"></a>
         <div class="menu">
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
             <ul class="menulist">
                 <li class="menuitem"><a href="#">Featured</a></li>
-                <li class="menuitem"><a href="#">My Bookshelf</a></li>
+                <li class="menuitem"><a href="#">My Books</a></li>
             </ul>
         </div>
     </nav>
@@ -33,57 +28,79 @@
             <h1>Featured</h1>
         </div>
         
-        <div class="slider">
-            <!-- book 1 -->
-            <div class="bookWrapper">
-                <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
-                <div class="bookImage">
-                    <img src="https://imgur.com/XSM1B7e.png">
+        <div class="sliderContainer">
+            <div class="slider">
+                <!-- book 1 -->
+                <div class="bookWrapper">
+                    <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/XSM1B7e.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>Klara and the Sun</h2>
+                        <p>Kazuo Ishiguro</p>
+                    </div>
                 </div>
-                <div class="bookTitles">
-                    <h2>Klara and the Sun</h2>
-                    <p>Kazuo Ishiguro</p>
+                <!-- book 2 -->
+                <div class="bookWrapper">
+                    <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/ngpAdSx.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>Never Let Me Go</h2>
+                        <p>Kazuo Ishiguro</p>
+                    </div>
                 </div>
-            </div>
-            <!-- book 2 -->
-            <div class="bookWrapper">
-                <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
-                <div class="bookImage">
-                    <img src="https://imgur.com/ngpAdSx.png">
+                <!-- book 3 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/3DNQOIU.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>Clockwork Orange</h2>
+                        <p>Anthony Burgess</p>
+                    </div>
                 </div>
-                <div class="bookTitles">
-                    <h2>Never Let Me Go</h2>
-                    <p>Kazuo Ishiguro</p>
+                <!-- book 4 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://i.imgur.com/HxE4mt3.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>War of the Worlds</h2>
+                        <p>H.G. Wells</p>
+                    </div>
                 </div>
-            </div>
-            <!-- book 3 -->
-            <div class="bookWrapper">
-                <div class="bookImage">
-                    <img src="https://imgur.com/3DNQOIU.png">
+                <!-- book 4 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://i.imgur.com/tbjbjIW.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>The Handmaid’s Tale</h2>
+                        <p>Margaret Atwood</p>
+                    </div>
                 </div>
-                <div class="bookTitles">
-                    <h2>Clockwork Orange</h2>
-                    <p>Anthony Burgess</p>
+                <!-- book 4 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://i.imgur.com/tbjbjIW.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>The Handmaid’s Tale</h2>
+                        <p>Margaret Atwood</p>
+                    </div>
                 </div>
-            </div>
-            <!-- book 4 -->
-            <div class="bookWrapper">
-                <div class="bookImage">
-                    <img src="https://i.imgur.com/HxE4mt3.png">
-                </div>
-                <div class="bookTitles">
-                    <h2>War of the Worlds</h2>
-                    <p>H.G. Wells</p>
-                </div>
-            </div>
-            <!-- book 4 -->
-            <div class="bookWrapper">
-                <div class="bookImage">
-                    <img src="https://i.imgur.com/tbjbjIW.png">
-                </div>
-                <div class="bookTitles">
-                    <h2>The Handmaid’s Tale</h2>
-                    <p>Margaret Atwood</p>
+                <!-- book 4 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://i.imgur.com/tbjbjIW.png">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>The Handmaid’s Tale</h2>
+                        <p>Margaret Atwood</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,8 +123,8 @@
                     <th>Author</th>
                     <th>Category</th>
                     <th>Rating</th>
-                    <th>Date Finished</th>
-                    <th>Book Review</th>
+                    <th>Finished</th>
+                    <th>Review</th>
                     <!-- <th>Delete</th> -->
                   </tr>
                 </thead>
@@ -159,11 +176,11 @@
             </div>
                 <div class="form-row">
                 <label for="bookRating">Star Rating:</label>
-                <input type="number" id="bookRating" name="bookRating" min="0" max="5" step="1" required>
+                <input type="number" id="bookRating" name="bookRating" min="0" max="5" step="1" placeholder="an integer between 1-5" required>
             </div>
             <div class="form-row">
                 <label for="bookReview">Book Review:</label>
-                <textarea id="bookReview" name="bookreview" rows="4" required></textarea>
+                <textarea id="bookReview" name="bookreview" rows="4" placeholder="your thoughts on the book" required></textarea>
             </div>
             <div class="form-row">
                 <input type="submit" value="Submit">
