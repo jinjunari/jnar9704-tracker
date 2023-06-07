@@ -14,19 +14,12 @@
 <body>
     <nav class="navbar">
         <a href="#" class="logo"><img src="https://imgur.com/WL7Y4FK.png" width="180" alt="Logo"></a>
-        <!-- <div class="menu">
-            <ul class="menulist">
-                <li class="menuitem"><a href="#">Featured</a></li>
-                <li class="menuitem"><a href="#">My Books</a></li>
-            </ul>
-        </div> -->
     </nav>
     
     <section id="mySection" class="beige">
         <div class="featuredHeading">
             <h1>Featured</h1>
         </div>
-        
         <div class="sliderContainer">
             <div class="slider">
                 <!-- Book 1 -->
@@ -40,7 +33,6 @@
                         <p>Kazuo Ishiguro</p>
                     </div>
                 </div>
-                
                 <!-- Book 2 -->
                 <div class="bookWrapper">
                     <img class="favourite" src="https://i.imgur.com/azBvbLK.png" alt="Favourite">
@@ -52,7 +44,6 @@
                         <p>Kazuo Ishiguro</p>
                     </div>
                 </div>
-                
                 <!-- Book 3 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
@@ -63,7 +54,6 @@
                         <p>Anthony Burgess</p>
                     </div>
                 </div>
-                
                 <!-- Book 4 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
@@ -74,7 +64,6 @@
                         <p>H.G. Wells</p>
                     </div>
                 </div>
-                
                 <!-- Book 5 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
@@ -85,7 +74,6 @@
                         <p>Joseph Heller</p>
                     </div>
                 </div>
-                
                 <!-- Book 6 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
@@ -96,7 +84,6 @@
                         <p>Franz Kafka</p>
                     </div>
                 </div>
-                
                 <!-- Book 7 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
@@ -107,43 +94,79 @@
                         <p>Margaret Atwood</p>
                     </div>
                 </div>
+                <!-- Book 8 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/ro86hTo.png" alt="Book Image">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>Moby Dick</h2>
+                        <p>Herman Melville</p>
+                    </div>
+                </div>
+                <!-- Book 9 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/d0W8H1f.png" alt="Book Image">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>1984</h2>
+                        <p>George Orwell</p>
+                    </div>
+                </div>
+                <!-- Book 10 -->
+                <div class="bookWrapper">
+                    <div class="bookImage">
+                        <img src="https://imgur.com/UqcziOl.png" alt="Book Image">
+                    </div>
+                    <div class="bookTitles">
+                        <h2>Hobbit</h2>
+                        <p>J.R.R. Tolkien</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
+<!-- MY BOOKSHELF -->
     <div class="splitGroup">
         <section id="mySection" class="myBookshelf">
             <h1>My Bookshelf</h1>
-            <p>A compilation of your reading history</p>
-            <br>
-                <table id="bookTable">
-                    <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Category</th>
-                        <th>Rating</th>
-                        <th>Finished</th>
-                        <th>Review</th>
-                    </tr>
-                    </thead>
-                    <tbody id="bookTableBody">
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-        </section>
+            <div class="mega">
+                <p>A compilation of your reading history</p>
+                <br>
 
+                    <div class="tableWrapper">
+                        <table id="bookTable">
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>Category</th>
+                                <th>Rating</th>
+                                <th>Finished</th>
+                                <th>Review</th>
+                            </tr>
+                            </thead>
+                            <tbody id="bookTableBody">
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </section>
+    <!-- QUOTE SECTION  -->
         <aside id="mySection" class="quoteWrapper">
             <q>"The more that you read, the more things you will know. The more that you learn, the more places you’ll go"</q>
             <p>Dr.Seuss</p>
         </aside>
     </div>
-
+<!-- FORM SECTION  -->
     <section id="mySection" class="lightBeige">
         <h1>Add Finished Book</h1>
-
         <form id="bookForm">
             <div class="form-row">
                 <label for="bookName">Title</label>
@@ -181,8 +204,10 @@
         </form>
     </section>
 
+<!-- FOOTER  -->
     <footer id="footer">
         <a href="#" class="logo"><img src="https://imgur.com/hQTxqui.png" alt="Logo"></a>
     </footer>
+
 </body>
 </html>

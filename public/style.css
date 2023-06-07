@@ -1,6 +1,6 @@
 html body{
     height: 100%;
-    width: 100%;
+    width: window;
     color: #362B18;
     background-color: #1A1B1A;
     padding: 10px;
@@ -48,20 +48,6 @@ q {font-family: 'Roboto Slab';
     text-decoration: none;
     color: inherit;
 }
-
-/* .menulist{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-.menuitem:hover{
-    padding: 10px;
-    border-style: solid;
-    border-color: #E0D5C2;
-    border-width: 1px;
-    border-radius: 20px;
-    transition: 0.3s;
-} */
 
 /* GENERIC SECTION STYLING  */
 #mySection{
@@ -116,16 +102,14 @@ q {font-family: 'Roboto Slab';
     max-width: 500px;
     height: auto;
     gap: 8px;
-    /* Add transition property for smooth scaling */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Add transition property for smooth scaling */
 }
 .bookWrapper:hover {
-    /* Apply the scaling effect on hover */
-    transform: scale(0.95);
+    transform: scale(0.95);/* Apply the scaling effect on hover */
 }
 
 .bookImage img{
-    width: 100%; height: auto;
+    width: 180px; height: 280px;
 }
 
 .bookTitles{
@@ -154,7 +138,24 @@ q {font-family: 'Roboto Slab';
 /* MY BOOKSHELF SECTION  */
 .myBookshelf{
     background-color:#CC9980;
-    width: 60vw;
+    width: 60%;
+}
+
+.mega p{
+    margin-bottom: 20px;
+}
+
+.mega{
+    overflow-x: scroll;
+}
+
+.tableWrapper{
+    /* overflow-x: scroll; */
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 /* Generated Book list table  */
@@ -165,8 +166,10 @@ table {
 }
 
 thead {
+    font-weight: bold;
     border-bottom: 1px solid #362B18;
     font-size: 13px;
+    width: 100%;
 }
 th {
     padding: 5px;
@@ -309,7 +312,7 @@ textarea {
 
 
 
-/* Responsive for phone */
+/* RESPONSIVE FOR PHONE */
 @media screen and (max-width: 700px) {
     html body {
       padding: 5px; 
@@ -325,20 +328,19 @@ textarea {
     .navbar a {
         margin-top: 10px;
     }
-  
-    /* .menulist {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        padding: 5px 0px 5px 0px;
-    }
-   */
 
     /* GENERIC SECTION STYLING */
     #mySection {
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
     }
-      
+
+
+    .bookTitles{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
     /* SPLIT VIEW SECTIONING */
     .splitGroup {
       flex-direction: column;
@@ -374,3 +376,17 @@ textarea {
     }
   }
   
+/* For even smaller screens  */
+@media screen and (max-width: 300px){
+    nav img{
+        width: 50vw;
+    }
+
+    input::file-selector-button {
+        display: flex;
+    }
+
+    footer img{
+        width: 50vw;
+    }
+}
