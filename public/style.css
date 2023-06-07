@@ -8,7 +8,6 @@ html body{
 }
 
 /* GLOBAL TEXT STYLING */
-
 h1 {font-family: 'Roboto Slab', sans-serif;
     color: inherit;
     font-weight: bold;
@@ -50,11 +49,10 @@ q {font-family: 'Roboto Slab';
     color: inherit;
 }
 
-.menulist{
+/* .menulist{
     list-style: none;
     display: flex;
     gap: 25px;
-    
 }
 .menuitem:hover{
     padding: 10px;
@@ -63,7 +61,7 @@ q {font-family: 'Roboto Slab';
     border-width: 1px;
     border-radius: 20px;
     transition: 0.3s;
-}
+} */
 
 /* GENERIC SECTION STYLING  */
 #mySection{
@@ -124,7 +122,7 @@ q {font-family: 'Roboto Slab';
 .bookWrapper:hover {
     /* Apply the scaling effect on hover */
     transform: scale(0.95);
-  }
+}
 
 .bookImage img{
     width: 100%; height: auto;
@@ -160,15 +158,14 @@ q {font-family: 'Roboto Slab';
 }
 
 /* Generated Book list table  */
-
 table {
     font-size: 11px;
     margin-top: -20px;
+    width: 100%;
 }
 
 thead {
     border-bottom: 1px solid #362B18;
-    align-items: left;
     font-size: 13px;
 }
 th {
@@ -179,13 +176,6 @@ td {
     padding: 5px;
     font-size: 13px;
     font-weight: 400;
-}
-
-.tdCatgory{
-    padding: 5px 10px;
-    border: 1px solid #362B18;
-    border-radius: 10px;
-    color: red;
 }
 
 button{
@@ -277,7 +267,7 @@ input::file-selector-button {
 
 input[type="submit"] {
     padding: 5px 10px;
-    background-color: #1A1B1A;
+    background-color: #DD674C;
     color: #DFD4C1;
     border: none;
     border-radius: 4px;
@@ -330,14 +320,14 @@ textarea {
         margin-top: 10px;
     }
   
-    .menulist {
+    /* .menulist {
         display: flex;
         flex-direction: row;
         gap: 30px;
         padding: 5px 0px 5px 0px;
     }
-
-  
+   */
+   
     /* GENERIC SECTION STYLING */
     #mySection {
     padding: 30px 30px 30px 30px;
@@ -353,7 +343,8 @@ textarea {
     .myBookshelf {
       width: 100%;
     }
-  
+
+   
     /* QUOTE SECTION */
     .quoteWrapper {
       width: 100%;

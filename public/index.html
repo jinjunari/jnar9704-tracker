@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans">
-    <title>Bookshelf.</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- navigation bar -->
     <nav class="navbar">
-        <a href="#" class="logo"><img src="https://imgur.com/WL7Y4FK.png" width="180"></a>
-        <div class="menu">
+        <a href="#" class="logo"><img src="https://imgur.com/WL7Y4FK.png" width="180" alt="Logo"></a>
+        <!-- <div class="menu">
             <ul class="menulist">
                 <li class="menuitem"><a href="#">Featured</a></li>
                 <li class="menuitem"><a href="#">My Books</a></li>
             </ul>
-        </div>
+        </div> -->
     </nav>
-    <!-- Section: FEATURED -->
+    
     <section id="mySection" class="beige">
         <div class="featuredHeading">
             <h1>Featured</h1>
@@ -30,72 +29,78 @@
         
         <div class="sliderContainer">
             <div class="slider">
-                <!-- book 1 -->
+                <!-- Book 1 -->
                 <div class="bookWrapper">
-                    <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
+                    <img class="favourite" src="https://i.imgur.com/azBvbLK.png" alt="Favourite">
                     <div class="bookImage">
-                        <img src="https://imgur.com/XSM1B7e.png">
+                        <img src="https://imgur.com/XSM1B7e.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
                         <h2>Klara and the Sun</h2>
                         <p>Kazuo Ishiguro</p>
                     </div>
                 </div>
-                <!-- book 2 -->
+                
+                <!-- Book 2 -->
                 <div class="bookWrapper">
-                    <img class = "favourite" src="https://i.imgur.com/azBvbLK.png">
+                    <img class="favourite" src="https://i.imgur.com/azBvbLK.png" alt="Favourite">
                     <div class="bookImage">
-                        <img src="https://imgur.com/ngpAdSx.png">
+                        <img src="https://imgur.com/ngpAdSx.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
                         <h2>Never Let Me Go</h2>
                         <p>Kazuo Ishiguro</p>
                     </div>
                 </div>
-                <!-- book 3 -->
+                
+                <!-- Book 3 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
-                        <img src="https://imgur.com/3DNQOIU.png">
+                        <img src="https://imgur.com/3DNQOIU.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
                         <h2>Clockwork Orange</h2>
                         <p>Anthony Burgess</p>
                     </div>
                 </div>
-                <!-- book 4 -->
+                
+                <!-- Book 4 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
-                        <img src="https://i.imgur.com/HxE4mt3.png">
+                        <img src="https://i.imgur.com/HxE4mt3.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
                         <h2>War of the Worlds</h2>
                         <p>H.G. Wells</p>
                     </div>
                 </div>
-                <!-- book 4 -->
+                
+                <!-- Book 5 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
-                        <img src="https://i.imgur.com/tbjbjIW.png">
+                        <img src="https://imgur.com/X92rDAC.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
-                        <h2>The Handmaid’s Tale</h2>
-                        <p>Margaret Atwood</p>
+                        <h2>Catch 22</h2>
+                        <p>Joseph Heller</p>
                     </div>
                 </div>
-                <!-- book 4 -->
+                
+                <!-- Book 6 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
-                        <img src="https://i.imgur.com/tbjbjIW.png">
+                        <img src="https://imgur.com/tP9BiHx.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
-                        <h2>The Handmaid’s Tale</h2>
-                        <p>Margaret Atwood</p>
+                        <h2>Metamorphosis</h2>
+                        <p>Franz Kafka</p>
                     </div>
                 </div>
-                <!-- book 4 -->
+                
+                <!-- Book 7 -->
                 <div class="bookWrapper">
                     <div class="bookImage">
-                        <img src="https://i.imgur.com/tbjbjIW.png">
+                        <img src="https://i.imgur.com/tbjbjIW.png" alt="Book Image">
                     </div>
                     <div class="bookTitles">
                         <h2>The Handmaid’s Tale</h2>
@@ -106,63 +111,51 @@
         </div>
     </section>
 
-    <!-- Section: MY BOOKSHELF -->
     <div class="splitGroup">
-
-        <!-- Section: MY BOOKSHELF -->
         <section id="mySection" class="myBookshelf">
             <h1>My Bookshelf</h1>
             <p>A compilation of your reading history</p>
-            <ul id="bookList"></ul>
-
-            <!-- Book list table -->
-            <table id="bookTable">
-                <thead>
-                  <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Category</th>
-                    <th>Rating</th>
-                    <th>Finished</th>
-                    <th>Review</th>
-                    <!-- <th>Delete</th> -->
-                  </tr>
-                </thead>
-                <!-- added books go here  -->
-                <tbody id="bookTableBody">
+            <br>
+                <table id="bookTable">
+                    <thead>
                     <tr>
-                        <td></td>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Rating</th>
+                        <th>Finished</th>
+                        <th>Review</th>
                     </tr>
-                </tbody>
-                
-              </table>
-
+                    </thead>
+                    <tbody id="bookTableBody">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
         </section>
 
-
-        <!-- Section: QUOTE -->
         <aside id="mySection" class="quoteWrapper">
             <q>"The more that you read, the more things you will know. The more that you learn, the more places you’ll go"</q>
             <p>Dr.Seuss</p>
         </aside>
     </div>
 
-    <!-- Section: Form  -->
     <section id="mySection" class="lightBeige">
         <h1>Add Finished Book</h1>
 
         <form id="bookForm">
             <div class="form-row">
                 <label for="bookName">Title</label>
-                <input type="text" name="bookName" id="bookName" required="true" />
+                <input type="text" name="bookName" id="bookName" required>
             </div>
             <div class="form-row">
                 <label for="authorName">Author's Full Name</label>
-                <input type="text" name="authorName" id="authorName" required="true" />
+                <input type="text" name="authorName" id="authorName" required>
             </div>
             <div class="form-row">
                 <label for="bookCategory">Category</label>
-                <select id="bookCategory" name="bookCategory" required="true">
+                <select id="bookCategory" name="bookCategory" required>
                     <option value="" class="categorytText">Select a category</option>
                     <option value="romance">Romance</option>
                     <option value="non-fiction">Non-Fiction</option>
@@ -174,25 +167,22 @@
                 <label for="bookImage">Book Cover:</label>
                 <input type="file" id="bookImage" name="bookImage" accept="image/png" required>
             </div>
-                <div class="form-row">
+            <div class="form-row">
                 <label for="bookRating">Star Rating:</label>
                 <input type="number" id="bookRating" name="bookRating" min="0" max="5" step="1" placeholder="an integer between 1-5" required>
             </div>
             <div class="form-row">
                 <label for="bookReview">Book Review:</label>
-                <textarea id="bookReview" name="bookreview" rows="4" placeholder="your thoughts on the book" required></textarea>
+                <textarea id="bookReview" name="bookReview" rows="4" placeholder="your thoughts on the book" required></textarea>
             </div>
             <div class="form-row">
                 <input type="submit" value="Submit">
             </div>
         </form>
-         
-
     </section>
 
-    <!-- FOOTER  -->
     <footer id="footer">
-        <a href="#" class="logo"><img src="https://imgur.com/hQTxqui.png"></a>
+        <a href="#" class="logo"><img src="https://imgur.com/hQTxqui.png" alt="Logo"></a>
     </footer>
 </body>
 </html>
