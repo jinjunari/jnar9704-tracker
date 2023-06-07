@@ -191,6 +191,12 @@ button{
     border-radius: 4px;
 }
 
+button:hover{
+    background-color: #525252;
+    transform: scale(0.90);
+    transition-duration: 0.5s;
+}
+
 /* QUOTE SECTION  */
 .quoteWrapper{
     background-color: #B5A28C;
@@ -262,7 +268,7 @@ input::file-selector-button {
   }
   input::file-selector-button:hover {
     background-position-x: 100%;
-    transform: scale(0.95);
+    transform: scale(0.90);
   }
 
 input[type="submit"] {
@@ -276,8 +282,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-background-color: #DD674C;
-transform: scale(0.95);
+background-color: #F29A86;
+transform: scale(0.90);
 transition-duration: 0.5s;
 }
 
@@ -327,7 +333,7 @@ textarea {
         padding: 5px 0px 5px 0px;
     }
    */
-   
+
     /* GENERIC SECTION STYLING */
     #mySection {
     padding: 30px 30px 30px 30px;

@@ -1,5 +1,4 @@
-# jnar9704-tracker
-# DECO2017 Final Prototype
+# jnar9704-tracker: DECO2017 Final Prototype
 
 ## DEPLOYMENT PROCEDURES
 1.'npm express install'
